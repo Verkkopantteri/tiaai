@@ -112,11 +112,11 @@ export default function CustomerBehaviorSection({ theme, dark, d }) {
         {/* Top Clicked Links */}
         <Card theme={theme} className={`${cardBg} md:col-span-2`}>
           <p className={`text-xs uppercase tracking-widest font-medium mb-4 ${subText}`}>Most Clicked Links</p>
-          <div className="grid grid-cols-2 md:grid-cols-5 gap-3">
+          <div className="flex items-center justify-around">
             {d.behavior.topClickedLinks.map((link, i) => (
-              <div key={i} className="rounded-lg p-3 text-center">
-                <p className="text-lg font-light text-emerald-400">{link.count}</p>
-                <p className={`text-xs ${subText} truncate mt-1`}>{link.url}</p>
+              <div key={i} className="text-center px-4 py-2">
+                <p className="text-2xl font-light text-emerald-400">{link.count}</p>
+                <p className={`text-xs ${subText} mt-1`}>{link.url}</p>
               </div>
             ))}
           </div>
