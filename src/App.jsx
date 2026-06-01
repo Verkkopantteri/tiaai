@@ -85,7 +85,7 @@ export default function App() {
             }}
             aria-label="Toggle theme"
           >
-            {darkMode ? "☀️" : "🌙"}
+            {darkMode ? "☼" : "☽"}
           </button>
         </div>
 
