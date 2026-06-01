@@ -61,15 +61,12 @@ export default function App() {
         <div className="max-w-6xl mx-auto px-5 flex items-center justify-between h-14">
           {/* Logo */}
           <div className="flex items-center gap-2.5">
-            <div
-              className="w-7 h-7 rounded-lg flex items-center justify-center text-xs font-bold"
-              style={{ background: "rgba(52,211,153,0.15)", color: "#34d399" }}
-            >
-              T
-            </div>
-            <span className="text-sm font-medium tracking-wide" style={{ color: theme.textColor }}>
-              TIA AI
-            </span>
+            <img
+              src="https://6a1d4cd40bc623d413b1bf9a.imgix.net/logo/tia.ai.png"
+              alt="TIA AI"
+              className="h-7 w-auto object-contain"
+              style={{ filter: dark ? "none" : "invert(1)" }}
+            />
             <span
               className="text-xs px-2 py-0.5 rounded-full"
               style={{ background: "rgba(52,211,153,0.12)", color: "#34d399" }}
