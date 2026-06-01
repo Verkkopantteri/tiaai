@@ -160,3 +160,5 @@ export const CHAT_THEMES = {
     msgAreaBg: '#ececee',
   },
 };
+
+export const mockData = MOCK;
