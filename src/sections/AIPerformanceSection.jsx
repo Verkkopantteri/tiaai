@@ -98,7 +98,7 @@ export default function AIPerformanceSection({ theme, dark, d }) {
           <div className="flex items-center gap-6">
             <div className="relative w-24 h-24">
               <svg viewBox="0 0 100 100" className="w-full h-full -rotate-90">
-                <circle cx="50" cy="50" r="40" fill="none" stroke="#27272a" strokeWidth="10" />
+                <circle cx="50" cy="50" r="40" fill="none" stroke={dark ? "#27272a" : "#e4e4e7"} strokeWidth="10" />
                 <circle
                   cx="50" cy="50" r="40" fill="none" stroke={EMERALD} strokeWidth="10"
                   strokeDasharray={`${2 * Math.PI * 40 * d.ai.avgConfidence / 100} ${2 * Math.PI * 40}`}
